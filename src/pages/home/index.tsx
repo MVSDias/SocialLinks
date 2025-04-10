@@ -10,6 +10,7 @@ import {
   getDoc,
 } from "firebase/firestore";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 interface LinkProps {
   // crio um type pra usar com lista.
@@ -101,16 +102,19 @@ export function Home() {
           //faço uma renderização condicional, onde verifico se socialLinks não é undefined, depois pego as chaves de dentro do objeto(Object.Keys) e vejo se o tamanho é  maior q zero. Se for é pq tem alguma propriedade(facebook, instagram, youtube) dentro, então (&&) renderizo o footer)
           <footer className="flex justify-center gap-3 my-4">
             <Social url={socialLinks?.facebook}>
-              <FaFacebook size={35} color="#fff" />
+              <FaFacebook className="transition transform hover:scale-110" size={35} color="#fff" />
             </Social>
             <Social url={socialLinks?.youtube}>
-              <FaYoutube size={35} color="#fff" />
+              <FaYoutube className="transition transform hover:scale-110" size={35} color="#fff" />
             </Social>
             <Social url={socialLinks?.instagram}>
-              <FaInstagram size={35} color="#fff" />
+              <FaInstagram className="transition transform hover:scale-110" size={35} color="#fff" />
             </Social>
           </footer>
         )}
+        <Link 
+          to='/login'
+          className="text-white font-bold mt-10 text-center transition transform hover:scale-110">Login</Link>
       </main>
     </div>
   );
