@@ -3,15 +3,15 @@
 
 Projeto pessoal que exibe meus links de redes sociais de forma prática e estilizada. Desenvolvido com foco em praticar tecnologias modernas do front-end e integração com o Firebase.
 
-![Preview da Home](./assets/pagina_home.png)
+![Preview da Home](src/assets/pagina_home.png)
 <br />
 <br />
 
-![Preview de Admin](./assets/pagina_admin.png)
+![Preview de Admin](src/assets/pagina_admin.png)
 <br />
 <br />
 
-![Preview de Redes Sociais](./assets/pagina_rede_social.png)
+![Preview de Redes Sociais](src/assets/pagina_rede_social.png)
 <br />
 <br />
 
