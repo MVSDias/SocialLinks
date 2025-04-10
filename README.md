@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# DevLinks
 
-Currently, two official plugins are available:
+Projeto pessoal que exibe meus links de redes sociais de forma prática e estilizada. Desenvolvido com foco em praticar tecnologias modernas do front-end e integração com o Firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Preview da Home](./assets/pagina_home.png)
+<br />
+<br />
 
-## Expanding the ESLint configuration
+![Preview de Admin](./assets/pagina_admin.png)
+<br />
+<br />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Preview de Redes Sociais](./assets/pagina_rede_social.png)
+<br />
+<br />
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔗 Sobre
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O **DevLinks** é uma aplicação web que:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Mostra meus links sociais na página inicial
+- Possui uma área de login para o admin
+- Permite ao admin cadastrar e editar novos links via painel restrito
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Router DOM](https://reactrouter.com/)
+- [Material UI](https://mui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Firebase](https://firebase.google.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## 💻 Como rodar o projeto localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/devlinks.git
+
+# Acesse a pasta do projeto
+cd devlinks
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
+
